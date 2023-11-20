@@ -1,0 +1,16 @@
+.header  {
+    height: 90%;
+    width: 90%;
+    position: fixed;
+    background-color: #ffffff;
+    color: #dc140a;
+    padding: 20px;
+    flex-direction: column;
+    font-weight: bold;
+    text-align: left;
+    font-size: calc(10px + 2vmin);
+  }
+
+  .home{
+    margin: 30px 30px 20px 20px;
+  }

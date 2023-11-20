@@ -1,0 +1,86 @@
+
+
+.main{
+    margin-left: 30%; /* Same as the width of the sidenav */
+    font-size: 14px; /* Increased text to enable scrolling */
+}
+.container{
+    border-radius: 0.1px;
+background-color:white;
+border: inset;
+    border-color: #f5f5f5;
+margin-bottom: 10px;
+}
+.price{
+    background:#f5f5f5;
+}
+.image{
+    height: 100%;
+    width: 100%;
+}
+  .column1 {
+    float: left;
+    padding: 2px;
+    width: 40%;
+  }
+  .column2 {
+    display: inline;
+    float: left;
+    width: 38%;
+  }
+  .column3 {
+    float: left;
+    width: 20.33%;
+    height: 100%;
+    background-color: #f5f5f5;
+  }
+  .container::after {
+  
+    content: "";
+  display: table;
+  clear: both;
+
+  }
+
+  .hotel-heading{
+    font-weight: bold;
+    font-size: 14px;
+    font-family: Arial;
+    padding-top: 5px;
+    color: black;
+  }
+  .room-desc{
+    font-weight: normal;
+    font-size: 12px;
+    font-family: Arial;
+    padding-top: 5px;
+    color: black;
+  }
+.room-heading{
+    font-weight: bold;
+    color: black;
+}
+
+[data-rating] {
+    text-align:left;
+    font-style:normal;
+    position: relative;
+  }
+  [data-rating]::before { 
+    display:block;
+    content: '★★★★★';
+    color: #ddd;
+  }
+  [data-rating]::after {
+    white-space:nowrap;
+    top:0;
+    left:0;
+    content: '★★★★★';
+    width: 0;
+    color: orange;
+    overflow:hidden;
+    height:100%;
+  }
+  @media screen and (max-width: 700px) {
+    .main {margin-left: 0;}
+}

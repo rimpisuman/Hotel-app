@@ -1,0 +1,76 @@
+[
+    {
+       "HotelId": "1",
+       "HotelName": "Secret Point Hotel",
+       "Description": "Save up to 50% off traditional hotels. Free WiFi, great location near downtown.",
+       "Category": "Boutique",
+       "image": "https://hotelimages.webjet.com.au/lodging/1000000/850000/845400/845390/e394a620_z.jpg",
+       "Price": 282,
+       "Rating": 4.6,
+       "Rooms": [
+          {
+             "Description": "Standard Room, 2 Double Beds (City View)",
+             "Type": "Standard Room",
+             "BedOptions": "1 King Bed",
+             "SleepsCount": 2,
+             "SmokingAllowed": true
+            
+          }
+       ]
+    },
+    {
+       "HotelId": "10",
+       "HotelName": "Country Home",
+       "Description": "Save up to 50% off traditional hotels. Free WiFi, great location near downtown, full kitchen, washer & dryer, 24/7 support, bowling alley, fitness center and more.",
+       "Category": "Extended-Stay",
+       "image":"https://hotelimages.webjet.com.au/lodging/1000000/570000/564500/564404/3398b9cd_z.jpg",
+       "Price": 244.99,
+       "Rating": 2.7,
+       "Rooms": [
+          {
+             "Description": "Budget Room, 1 Queen Bed (Amenities)",
+             "Type": "Budget Room",
+             "BedOptions": "1 Queen Bed",
+             "SleepsCount": 2,
+             "SmokingAllowed": false
+          }
+       ]
+    },
+    {
+       "HotelId": "12",
+       "HotelName": "Winter Panorama Resort",
+       "Description": "Plenty of great skiing, outdoor ice skating, sleigh rides, tubing and snow biking. Yoga, group exercise classes and outdoor hockey are available year-round, plus numerous options for shopping as well as great spa services. Newly-renovated with large rooms, free 24-hr airport shuttle & a new restaurant. Rooms/suites offer mini-fridges & 49-inch HDTVs.",
+       "Category": "Resort and Spa",
+       "image":"https://hotelimages.webjet.com.au/hotels/1000000/460000/451200/451160/a1830e51_z.jpg",
+       "Price": 141.99,
+       "Rating": 4.5,
+       "Rooms": [
+      
+          {
+             "Description": "Deluxe Room, 1 Queen Bed (City View)",
+             "Type": "Deluxe Room",
+             "BedOptions": "1 Queen Bed",
+             "SleepsCount": 2,
+             "SmokingAllowed": false
+          }
+       ]
+    },
+    {
+      "HotelId": "13",
+      "HotelName": "Super King Resort",
+      "Description": "Good View, outdoor ice skating, sleigh rides, tubing and snow biking. Yoga, group exercise classes and outdoor hockey are available year-round, plus numerous options for shopping as well as great spa services. Newly-renovated with large rooms, free 24-hr airport shuttle & a new restaurant. Rooms/suites offer mini-fridges & 49-inch HDTVs.",
+      "Category": "Resort and Spa",
+      "image":"https://hotelimages.webjet.com.au/lodging/1000000/30000/23800/23775/0a626b13_z.jpg",
+      "Price": 160.99,
+      "Rating": 4.5,
+      "Rooms": [
+         {
+            "Description": "Deluxe Room, 1 King Bed (City View)",
+            "Type": "Deluxe Room",
+            "BedOptions": "1 King Bed",
+            "SleepsCount": 2,
+            "SmokingAllowed": false
+         }
+      ]
+   }
+ ]

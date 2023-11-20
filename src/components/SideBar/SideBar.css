@@ -1,0 +1,33 @@
+.sidebar  {
+    height: 100%;
+    width: 25%;
+    position: absolute;
+    z-index: 1;
+    top: 30;
+    left: 0;
+    background-color: #f5f5f5;
+    overflow-x: hidden;
+    color: black;
+    padding: 10px;
+    margin: 20px;
+  }
+
+.side-bar-text{
+font-weight: bold;
+font-size: 14px;
+}
+
+hr { 
+    height: 1px; 
+    background-color: rgb(214, 214, 214); 
+    border: none; 
+} 
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+
+}
