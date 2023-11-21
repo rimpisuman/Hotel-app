@@ -16,18 +16,12 @@
 font-weight: bold;
 font-size: 14px;
 }
-
-hr { 
-    height: 1px; 
-    background-color: rgb(214, 214, 214); 
-    border: none; 
-} 
-
 @media screen and (max-width: 700px) {
     .sidebar {
       width: 100%;
       height: auto;
       position: relative;
+      overflow: scroll;
     }
 
 }
