@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./ExpandableSection.css";
 
 export interface IExpandableSection {
   title: string;
@@ -15,7 +16,13 @@ const ExpandableSection = ({ title, children }: IExpandableSection) => {
           setExpanded(!expanded);
         }}
       >
-        {children ? (expanded ? "-" : "+") : null}
+        {children ? (
+          expanded ? (
+            <div className="up" />
+          ) : (
+            <div className="down" />
+          )
+        ) : null}
         {title}
       </h5>
       {expanded && <div>{children}</div>}

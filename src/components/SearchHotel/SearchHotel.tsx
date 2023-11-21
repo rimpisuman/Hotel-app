@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import "./SearchHotel.css";
+import hotels from "../../Data/hotel.json";
 import { IHotels } from "../../pages/Home/HomeScreen";
 
 export interface ISearchHotels {
-  hotels: IHotels[];
   setFilteredData: (hotels: IHotels[]) => void;
 }
 
-const SearchHotel = ({ hotels, setFilteredData }: ISearchHotels) => {
+const SearchHotel = ({ setFilteredData }: ISearchHotels) => {
   const [searchInput, setSearchInput] = useState("");
-  console.log(hotels, "hotels");
+
   return (
     <div className="search">
       <input
@@ -26,21 +26,16 @@ const SearchHotel = ({ hotels, setFilteredData }: ISearchHotels) => {
         className="search-button"
         onClick={() => {
           if (searchInput.length > 0) {
-            hotels.filter((item) => {
-              return;
-
-              console.log(item, "hotel");
-              //hotel.HotelName.match(searchInput);
-              //  setFilteredData(filteredData);
+            const filteredData = hotels.filter((hotel) => {
+              return hotel.HotelName.match(searchInput);
             });
-
+            setFilteredData(filteredData);
             setSearchInput("");
           }
         }}
       >
         Go
       </button>
-      <div>{searchInput}</div>
     </div>
   );
 };

@@ -1,0 +1,12 @@
+
+  .diamond-rating-wrapper{
+    display:flex;
+    width: 125px;
+    padding:10px;
+  }
+ .diamond-fg{
+    display: flex;
+   
+    position: absolute;
+    overflow: hidden;
+  }

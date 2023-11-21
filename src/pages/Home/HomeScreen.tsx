@@ -28,7 +28,7 @@ function Home() {
     <div className="home">
       <header className="header">
         550 Hotels Available in Melbourne
-        <Sidebar hotels={hotels} setFilteredData={setFilteredData} />
+        <Sidebar setFilteredData={setFilteredData} />
         <Content hotels={hotels} />
       </header>
     </div>

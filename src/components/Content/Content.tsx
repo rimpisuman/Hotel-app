@@ -1,7 +1,7 @@
 import React from "react";
 import "./Content.css";
+import DiamondRating from "../DiamondRating/DiamondRating";
 import { IHotels } from "../../pages/Home/HomeScreen";
-import QualityRating from "../QualityRating/QualityRating";
 
 export interface IContent {
   hotels: IHotels[];
@@ -13,12 +13,11 @@ const Content = ({ hotels }: IContent) => {
       {hotels.map((hotel) => (
         <div className="container">
           <div className="column1">
-            <img className="image" src={hotel.image}></img>
+            <img className="image" alt="" src={hotel.image}></img>
           </div>
           <div className="column2">
-            <span className="hotel-heading">{hotel.HotelName}</span>
-            <i data-rating={hotel.Rating}></i>
-            <QualityRating hotels={hotels} />
+            <div className="hotel-heading">{hotel.HotelName}</div>
+            <DiamondRating value={hotel.Rating} />
             <p className="room-desc">
               <span className="room-heading">Room Type: </span>
               {hotel.Rooms.map((room) => room.Description)}

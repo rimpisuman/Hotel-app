@@ -1,6 +1,6 @@
 .header  {
     height: 90%;
-    width: 90%;
+    width: 92%;
     position: fixed;
     background-color: #ffffff;
     color: #dc140a;
@@ -9,6 +9,7 @@
     font-weight: bold;
     text-align: left;
     font-size: calc(10px + 2vmin);
+    overflow: hidden;
   }
 
   .home{

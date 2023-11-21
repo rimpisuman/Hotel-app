@@ -1,6 +1,32 @@
+.expandable{
+    display: block;
+    border-top:1px solid #b3b3b3;
+    margin-top:15px;
+}
 .heading{
-    color: gray;
+    display: flex;
+    color: black;
     font-size: 12px;
-    font-weight: normal;
-    font-style: arial;
+    font-weight: bold;
+    align-items: center;
+    grid-gap: 10px;
+    cursor:pointer;
+    margin:0;
+}
+
+.up:before {
+    content: '\276F';
+}
+
+.down:before {
+    content: '\276E';
+}
+
+.up, .down:before {
+    font-size: 30px;
+    display: inline-block;
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    padding: 10px;
 }
