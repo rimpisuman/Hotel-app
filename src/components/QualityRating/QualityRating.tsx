@@ -54,7 +54,7 @@ const QualityRating = ({ setFilteredData }: IRating) => {
     <div className="rating-list">
       {ratingList.map((item) => {
         return (
-          <div className="rating-item">
+          <div className="rating-item" key={item.value}>
             <input
               type="checkbox"
               id="st1"
@@ -67,7 +67,7 @@ const QualityRating = ({ setFilteredData }: IRating) => {
             <div className="diamonds">
               {!item.label &&
                 Array.from(Array(item.value).keys()).map((d) => (
-                  <DiamondIcon />
+                  <DiamondIcon key={d} />
                 ))}
             </div>
           </div>

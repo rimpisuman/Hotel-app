@@ -1,25 +1,26 @@
-.header  {
-    height: 90%;
-    width: 92%;
-    position: fixed;
-    background-color: #ffffff;
-    color: #dc140a;
-    padding: 20px;
-    flex-direction: column;
-    font-weight: bold;
-    text-align: left;
-    font-size: calc(10px + 2vmin);
-    overflow: hidden;
+.app-content  {
+   display: flex;
+   grid-gap: 10px;
   }
 
   .home{
-    margin: 30px 30px 20px 20px;
+    margin: 10px 20px;
+    background: #fff;
+    padding: 15px;
   }
-  @media screen and (max-width: 700px) {
-    .home  {margin-left: 0;
+  .header h1{
+    margin:0;
+    font-size:28px;
+    color: #dc140a;
+    color: #dc140a;
+    margin-bottom: 15px;
+  }
+
+  @media screen and (max-width:  992px) {
+    .home  {margin: 0;
       width: 100%;
       height: auto;
       position: relative;
-      overflow: scroll;
+      overflow: auto;
     }
 }

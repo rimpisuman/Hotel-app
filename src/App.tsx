@@ -6,10 +6,12 @@ import Home from "./pages/Home/HomeScreen";
 function App() {
   return (
     <div className="App">
-      <div className="logo-container">
-        <img src={logo} alt="Logo" className="logo" />;
+      <div className="app-wrapper">
+        <div className="logo-container">
+          <img src={logo} alt="Logo" className="logo" />;
+        </div>
+        <Home />
       </div>
-      <Home />
     </div>
   );
 }

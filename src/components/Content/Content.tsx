@@ -11,7 +11,7 @@ const Content = ({ hotels }: IContent) => {
   return (
     <div className="main">
       {hotels.map((hotel) => (
-        <div className="container">
+        <div className="container" key={hotel.HotelId}>
           <div className="column1">
             <img className="image" alt="" src={hotel.image}></img>
           </div>

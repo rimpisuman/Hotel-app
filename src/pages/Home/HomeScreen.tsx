@@ -26,11 +26,13 @@ function Home() {
   const [hotels, setFilteredData] = useState(hotel);
   return (
     <div className="home">
-      <header className="header">
-        550 Hotels Available in Melbourne
+      <div className="header">
+        <h1>550 Hotels Available in Melbourne</h1>
+      </div>
+      <div className="app-content">
         <Sidebar setFilteredData={setFilteredData} />
         <Content hotels={hotels} />
-      </header>
+      </div>
     </div>
   );
 }

@@ -1,23 +1,13 @@
 
   .diamond-rating-wrapper{
-    display:flex;
+    display: flex;
     width: 125px;
-    padding:10px;
+    margin: 5px 0 0 0;
+    height: 20px;
   }
  .diamond-fg{
     display: flex;
-   
     position: absolute;
     overflow: hidden;
   }
-
-
   
-@media screen and (max-width: 700px) {
-  .diamond-rating-wrapper {margin-left: 0;
-    width: auto;
-    height: auto;
-    position: relative;
-    overflow: scroll;
-  }
-}
