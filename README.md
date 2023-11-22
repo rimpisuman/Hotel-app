@@ -10,7 +10,7 @@ Before starting , you need to have Git and Node (version 18.18.2) installed.
 $ git clone https://github.com/rimpisuman/Hotel-app.git
 
 # Access
-$ cd Hotel-app
+$ cd repository
 
 # Install dependencies
 $ npm install
