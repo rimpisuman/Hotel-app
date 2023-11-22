@@ -1,7 +1,7 @@
 #Note:
 All the components are custom responsive components.
 
-# Getting Started with Create React App
+# Getting Started with Hotel-app
 Requirements
 Before starting , you need to have Git and Node (version 18.18.2) installed.
 
