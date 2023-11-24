@@ -2,6 +2,7 @@
 
 .main{
     font-size: 14px; 
+    width: calc(100vw - 380px);
 }
 .container{
   border: 1px solid #f6f6f6;

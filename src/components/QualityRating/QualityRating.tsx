@@ -15,7 +15,7 @@ export interface IRatingItem {
 
 const QualityRating = ({ setFilteredData }: IRating) => {
   const [ratingList, setRatingList] = useState<IRatingItem[]>([
-    { value: 1000, label: "All", isChecked: false },
+    { value: 1000, label: "All", isChecked: true },
     { value: 5, label: "", isChecked: false },
     { value: 4, label: "", isChecked: false },
     { value: 3, label: "", isChecked: false },
@@ -33,19 +33,19 @@ const QualityRating = ({ setFilteredData }: IRating) => {
 
   useEffect(() => {
     let filteredData: IHotels[] = hotels;
-
-    ratingList
-      .filter((d) => d.isChecked)
-      .forEach((rating) => {
-        filteredData = filteredData.filter((hotel) => {
-          if (rating.label === "All") return true;
-          if (rating.label === "Un-rated" && !hotel.Rating) return true;
+    filteredData = hotels.filter((hotel) => {
+      let retVal = false;
+      ratingList.forEach((rating) => {
+        if (rating.isChecked) {
+          if (rating.label === "All") retVal = true;
+          if (rating.label === "Un-rated" && !hotel.Rating) retVal = true;
           if (hotel.Rating >= rating.value && hotel.Rating <= rating.value + 1)
-            return true;
-
-          return false;
-        });
+            retVal = true;
+        }
       });
+
+      return retVal;
+    });
 
     setFilteredData(filteredData);
   }, [ratingList, setFilteredData]);
@@ -58,6 +58,7 @@ const QualityRating = ({ setFilteredData }: IRating) => {
             <input
               type="checkbox"
               id="st1"
+              checked={item.isChecked}
               value={item.value}
               onChange={(e) => {
                 handleOnChange(item, e.target.checked);
